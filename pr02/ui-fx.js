@@ -18,7 +18,7 @@
 	
 	function init(){
 		document.querySelectorAll('*[ui-fx="fadein"]').forEach((element) => {
-			console.log(element);
+			//console.log(element);
 		});
 	}
 });
