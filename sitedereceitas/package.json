@@ -1,0 +1,10 @@
+{
+  "name": "sitedereceitas",
+  "version": "1.0.0",
+  "description": "Site de receitas desenvolvido para a disciplina de Linguagem de Marcação e Configuração da Universidade do Grande Rio no semestre 2018.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daviinacio",
+  "license": "MIT"
+}
