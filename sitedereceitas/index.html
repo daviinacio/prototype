@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <base href="/sitedereceitas/">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AP1 - Linguagem de marcação e configuração</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="workident" class="floating">
+            <h5>Davi Inácio - Linguagem de marcação e configuração - UnigranRio - 2018.1</h5>
+        </div>
+        <header class="floating">
+            <div class="wrap">
+                <h1><a>Site de receitas</a></h1></;h1>
+                <nav id="navigationbar">
+                    <ul>
+                        <li class="active"><a>Receitas</a></li>
+                        <li><a>Forum</a></li>
+                        <li><a>Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="content" class="wrap">
+            <div class="receita">
+                <h2>Fricassê de frango</h2>
+                <figure>
+                    <img src="img/fricasse.jpg">
+                    <figcaption>Imagem meramente ilustrativa</figcaption>
+                </figure>
+                <dl>
+                    <div class="column_left">
+                        <dt>Ingredientes</dt>
+                        <dd><ul>
+                            <li>1 lata de creme de leite</li>
+                            <li>1 lata de milho verde</li>
+                            <li>1 copo de requeijão cremoso</li>
+                            <li>100 g de azeitona sem caroço</li>
+                            <li>2 peitos de frango desfiados</li>
+                            <li>200 g de mussarela fatiada</li>
+                            <li>100 g de batata palha</li>
+                            <li>1 xícara de água</li>
+                            <li>1 pitada de sal</li>
+                        </ul></dd>
+                    </div>
+                    <div class="column_right">
+                        <dt>Modo de preparo</dt>
+                        <dd><ol>
+                            <li>Bata no liquidificador o milho, o requeijão, o creme de leite e a água</li>
+                            <li>Refogue o creme do liquidificador com o frango desfiado, as azeitonas e o sal até ficar com uma textura espessa</li>
+                            <li>Coloque o refogado numa assadeira, cubra com mussarela e espalhe a batata palha por cima</li>
+                            <li>Leve ao forno até borbulhar</li>
+                            <li>Sirva com arroz branco</li>
+                        </ol></dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="receita">
+                <h2>Brigadeiro</h2>
+                <figure>
+                    <img src="img/brigadeiro.jpg">
+                    <figcaption>Imagem meramente ilustrativa</figcaption>
+                </figure>
+                <dl>
+                    <div class="column_left">
+                        <dt>Ingredientes</dt>
+                        <dd><ul>
+                            <li>1 caixa de leite condensado</li>
+                            <li>1 colher (sopa) de margarina sem sal</li>
+                            <li>7 colheres (sopa) de achocolatado ou 4 colheres (sopa) de chocolate em pó</li>
+                            <li>chocolate granulado</li>
+                        </ul></dd>
+                    </div>
+                    <div class="column_right">
+                        <dt>Modo de preparo</dt>
+                        <dd><ol>
+                            <li>Em uma panela funda, acrescente o leite condensado, a margarina e o chocolate em pó</li>
+                            <li>Cozinhe em fogo médio e mexa até que o brigadeiro comece a desgrudar da panela</li>
+                            <li>Deixe esfriar e faça pequenas bolas com a mão passando a massa no chocolate granulado</li>
+                        </ol></dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="receita">
+                <h2>Bolo de fubá</h2>
+                <figure>
+                    <img src="img/bolo.jpeg">
+                    <figcaption>Imagem meramente ilustrativa</figcaption>
+                </figure>
+                <dl>
+                    <div class="column_left">
+                        <dt>Ingredientes</dt>
+                        <dd><ul>
+                            <li>4 ovos</li>
+                            <li>2 xícaras (chá) de açúcar</li>
+                            <li>2 xícaras (chá) de trigo</li>
+                            <li>1 xícara (chá) de fubá</li>
+                            <li>3 colheres (sopa) de margarina</li>
+                            <li>1 xícara (chá) de leite</li>
+                            <li>4 colheres (chá) de fermento</li>
+                        </ul></dd>
+                    </div>
+                    <div class="column_right">
+                        <dt>Modo de preparo</dt>
+                        <dd><ol>
+                            <li>Em uma batedeira, bata as claras em neve e acrescente o açúcar</li>
+                            <li>Adicione as gemas, a margarina, o leite, a farinha de trigo, o fubá e continue batendo</li>
+                            <li>Acrescente por último o fermento e misture com uma colher ou espátula</li>
+                            <li>Despeje a massa em uma forma untada e deixe assar em forno médio (180° C), preaquecido, por aproximadamente 30 minutos</li>
+                        </ol></dd>
+                    </div>
+                </dl>
+            </div>
+            
+            <form action="" method="get">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" />
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" />
+                </div>
+                <div>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg"></textarea>
+                    
+                </div>
+                <input id="send" type="submit"/>
+            </form>
+        </div>
+    
+        <hr class="clear_both"/>
+        <footer class="wrap">
+            <p>&copy; 2018 Davi Inácio </p>
+            <p>AP1 - Linguagem de marcação e configuração - UnigranRio - 2018.1</p>
+        </footer>
+    </body>
+</html>

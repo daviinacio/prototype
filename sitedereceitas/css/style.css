@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    min-width: 450px;
+    background-image: url("../img/background.jpg");
+}
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+h1 {font-size: 32px !important;}
+h2 {font-size: 25px !important;}
+h3 {font-size: 22px !important;}
+h4 {font-size: 18px !important;}
+h5 {font-size: 12px !important;}
+h6 {font-size: 12px !important;}
+
+li { font-size: 15px !important; }
+p { text-indent: 20px; font-size: 16px !important; }
+a { cursor: pointer; }
+hr { background-color: darkorange; height: 1; }
+
+/*  *   *   Util    *   *   */
+.wrap { max-width: 800px; margin: auto; }
+
+.clear_both { clear: both; }
+.floating { position: inherit; }
+
+/*  *   *   Top Page    *   *   */
+#workident {
+    background: gray;
+    color: white;
+    text-align: center;
+}
+
+/*  *   *   Header  *   *   */
+
+header {
+    background: darkorange;
+    box-shadow: 0 2px 2px gray;
+    padding: 5px 20px;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 a {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+
+#navigationbar {
+    display: inline-block;
+    float: right;
+}
+
+#navigationbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navigationbar ul li {
+    list-style-type:none;
+    display: inline-block;
+}
+
+#navigationbar ul li a {
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 3px;
+}
+
+#navigationbar ul li a:hover {
+    color: white;
+}
+
+.selected li {
+    font-size: 18px !important;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+/*  *   *    Content    *   *   */
+#content {
+    color: #b43;
+    background: rgba(255, 220, 170, 0.65);
+    box-shadow: 1px 1px 4px #444;
+}
+
+.receita {
+/*    background: rgba(255, 220, 170, 0.65);*/
+    overflow: auto;
+    padding: 10px 0;
+/*    box-shadow: 1px 1px 4px #444;*/
+    margin: 20px;
+    text-align: center;
+    
+    cursor: pointer;
+    
+    border-bottom: 1px solid rgba(224, 112, 0, 0.5);
+}
+
+.receita h2 {
+    margin-bottom: 10px;
+}
+
+.selected dl {
+    margin-top: 20px !important;
+}
+
+.selected dl {
+    width: 90% !important;
+}
+
+dl {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    margin: auto 0;
+}
+
+dl dt { font-size: 18px; }
+
+dl dd {
+    margin: 0;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.selected {
+    display: block !important;
+}
+
+figure {
+    padding: 5px;
+    background: rgba(224, 112, 0, 0.1);
+    box-shadow: 0 0 1px gray;
+    
+    width: 35%;
+    margin-top: auto;
+    
+    display: inline-block;
+}
+
+.selected figure {
+    display: block;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 15px !important;
+    margin-top: 5px;
+}
+
+.column_left {
+    width: 100%;
+}
+
+.column_left dd { }
+
+.selected .column_right {
+    display: block;
+}
+
+.column_right {
+    display: none;
+}
+
+form {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+form label {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 12px;
+    font-size: 18px;
+}
+
+form input, form textarea {
+    width: 60%;
+    display: inline-block;
+    margin: 5px 0;
+    background: rgba(224, 112, 0, 0.2);
+    color: #b43;
+    font-size: 18px;
+    border: 1px solid #b43;
+    padding: 5px;
+}
+
+form textarea {
+    height: 200px;
+}
+
+#send {
+    right: 0;
+    width: 30%;
+}
+
+/*  *   *   Footer  *   *   */
+footer {
+    padding-bottom: 10px;
+}
+
+/* - Layout fix (02/02/2020) - */
+header > .wrap {
+    display: flex;
+    align-items: center;
+}
+
+#navigationbar {
+    margin-left: auto;
+}
+/* - End fix - */
+
+/*  *   *   Mobile  *   *   */
+@media (max-width: 500px) {
+    /* - Layout fix (02/02/2020) - */
+    header > .wrap {
+        display: block;
+    }
+
+    #navigationbar {
+        margin-left: none;
+    }
+
+    /* - End fix - */
+
+    header {
+        padding: 0;
+    }
+    
+    h1 {
+        text-align: center;
+        display: block;
+    }
+    
+    #content {
+        margin: 0 10px;
+    }
+    
+    figure {
+        margin: auto;
+        width: 85%;
+    }
+    
+    dl {
+        display: none;
+    }
+    
+    #navigationbar {
+        text-align: center;
+        display: block;
+        float: none;
+        border-top: 1px solid #e07000;
+    }
+}
