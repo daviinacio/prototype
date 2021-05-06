@@ -7,9 +7,6 @@
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-<style>
-
-</style>
 </head>
 <body>
   <div class="AbasList">
@@ -73,14 +70,14 @@
 </body>
 
 <script>
-function updateAbasSelection(){
   document.querySelectorAll('.AbaSelection').forEach(selection => {
-    selection.parentElement.className = 
-      selection.classList.contains("active") ? "active" : "";
+    selection.addEventListener('click', () => {
+        document.querySelectorAll('.AbaSelection').forEach(selection => {
+            selection.classList.remove('active')
+        })
+        selection.classList.add('active')
+    })
   })
-}
-
-setInterval(updateAbasSelection, 100)
-document.addEventListener('DOMContentLoaded', updateAbasSelection)
 </script>
+<script src='main.js'></script>
 </html>
